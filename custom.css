@@ -1,0 +1,111 @@
+body{
+    background: #F0F0F0;
+}
+nav {
+    padding-top: 13px;
+    border-bottom: 1px solid #aaa;
+    background: white;
+}
+
+nav ul {
+    overflow: auto;
+    list-style-type: none;
+}
+
+nav li {
+    height: 22px;
+    float: left;
+    margin-right: 0px;
+    border-right: 1px solid #aaa;
+    padding: 0 20px;
+}
+
+nav li:last-child {
+    border-right: none;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #ccc;
+    font: 16px/1 Helvetica, Verdana, sans-serif;
+    text-transform: uppercase;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+nav li a:hover {
+    color: #666;
+}
+
+nav li.active a {
+    color: #333;
+    
+}
+
+.cm-content-parent{
+    margin-top: 2%;
+    background: #FFFFFF;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    padding:12px;
+}
+
+.cm-content-wrapper{
+    min-height: 1px;
+    border-bottom: 1px dashed #aaa;
+    padding-top: 10px;
+    padding-bottom: 18px;
+    margin: 5px;
+}
+
+.cm-content-wrapper>a{
+    color: black;
+    text-decoration: none !important;
+}
+
+.cm-content-wrapper:hover{
+    background-color:  #F8F8F8;
+    border-radius: 6px;
+}
+.cm-content-time p{
+    font-size: 12px;
+    color: #888888;
+    float: left;
+}
+.cm-content-username p{
+    font-size: 12px;
+    color: #888888;
+    float: left;
+    margin-left: 2%;
+}
+.cm-content-text{
+    clear: both;
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 9999;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    line-height: 30px;
+    background: #646667;
+    color: #F8F8F8;
+    cursor: pointer;
+    border: 0;
+    border-radius: 2px;
+    text-decoration: none;
+    transition: opacity 0.2s ease-out;
+    opacity: 0;
+}
+#back-to-top.show {
+    opacity: 1;
+}
+.pagination *:hover{
+    background-color:  #F8F8F8!important;
+}
