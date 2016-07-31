@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        window.setTimeout(function() {
+            $(".cm-alert").fadeTo(1000, 0).slideUp(500, function(){
+                $(this).remove(); 
+            });
+        }, 4000);
+    </script>
 </head>
 
 <body>
@@ -19,16 +26,16 @@
             $username = $_POST['username'];
             $password = $_POST['password'];
             if($password=="user"&&$username=="user"){
-                echo '<div class="alert alert-success">
+                echo '<div class="alert alert-success cm-alert">
                         <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
                         <strong>Login Success!</strong> You are inside the system now.
                       </div>"';
             }
             else{
-                echo '<div class="alert alert-danger">
+                echo '<div class="alert alert-danger cm-alert">
                         <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
                         <strong>Login Failed!</strong> Wrong username and password.
-                      </div>"';
+                      </div>';
             }
         }
     ?>
